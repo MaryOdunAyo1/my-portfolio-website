@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mary Odunayo Ajayi — AI & Automation Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#12181B;
+    --bg-panel:#1B2327;
+    --ink:#EDE8DD;
+    --ink-soft:#A9AFA9;
+    --line:#2C3538;
+    --gold:#D3A15E;
+    --gold-soft:rgba(211,161,94,0.1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.65;
+    font-size:17px;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px;}
+  a{color:var(--gold);text-decoration:underline;text-underline-offset:3px;}
+  a:hover{opacity:0.8;}
+
+  nav{padding:28px 0;border-bottom:1px solid var(--line);}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;}
+  nav .name{font-family:'Fraunces', serif;font-weight:600;font-size:18px;}
+  nav .links a{margin-left:24px;font-size:15px;text-decoration:none;color:var(--ink-soft);}
+  nav .links a:hover{color:var(--gold);}
+
+  header.hero{padding:90px 0 76px;}
+  .eyebrow{font-size:14px;color:var(--gold);font-weight:600;letter-spacing:.03em;margin-bottom:20px;}
+  h1{font-size:clamp(32px,5vw,48px);line-height:1.22;margin:0 0 24px;max-width:680px;}
+  .hero p.lede{font-size:19px;color:var(--ink-soft);max-width:580px;margin:0;}
+
+  section{padding:70px 0;border-top:1px solid var(--line);}
+  section#about p{max-width:620px;font-size:18px;color:var(--ink-soft);}
+
+  h2.section-title{font-size:29px;margin:0 0 8px;}
+  p.section-sub{color:var(--ink-soft);font-size:16px;margin:0 0 46px;max-width:600px;}
+
+  .project{
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:38px;
+    margin-bottom:26px;
+  }
+  .project h3{font-size:23px;margin:0 0 10px;}
+  .project p.project-summary{color:var(--ink-soft);font-size:17px;margin:0 0 26px;}
+
+  .flow{
+    font-size:16px;
+    color:var(--gold);
+    background:var(--gold-soft);
+    border-left:2px solid var(--gold);
+    border-radius:6px;
+    padding:14px 18px;
+    margin-bottom:28px;
+    font-weight:500;
+  }
+
+  .project h4{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--ink-soft);
+    margin:22px 0 8px;
+    font-weight:600;
+    font-family:'Inter',sans-serif;
+  }
+  .project p, .project li{color:var(--ink-soft);font-size:16px;margin:0 0 6px;}
+  .project ul{padding-left:20px;margin:0;}
+
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+  .tag{
+    background:var(--gold-soft);
+    color:var(--gold);
+    border-radius:999px;
+    padding:6px 14px;
+    font-size:14px;
+    font-weight:500;
+  }
+
+  .demo-line{font-size:15px;color:var(--ink-soft);margin-top:20px;}
+  .demo-line a{font-weight:500;}
+
+  .skills-group{margin-bottom:30px;}
+  .skills-group h4{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--ink-soft);
+    margin:0 0 12px;
+    font-weight:600;
+  }
+  .skills-group .tags{margin-top:0;}
+
+  .future-box{
+    border:1.5px dashed var(--line);
+    border-radius:16px;
+    padding:42px;
+    text-align:left;
+  }
+  .future-box h3{font-size:21px;margin:0 0 10px;}
+  .future-box p{color:var(--ink-soft);font-size:16px;margin:0;max-width:560px;}
+
+  #contact .contact-grid{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px;}
+  .contact-card{
+    border:1px solid var(--line);
+    background:var(--bg-panel);
+    border-radius:12px;
+    padding:18px 24px;
+    font-size:16px;
+    min-width:210px;
+  }
+  .contact-card span{
+    display:block;
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-bottom:5px;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+  }
+
+  footer{padding:44px 0 64px;color:var(--ink-soft);font-size:14px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="name">Mary Odunayo Ajayi</div>
+    <div class="links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#future">What's next</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">AI &amp; AUTOMATION ENGINEER</div>
+    <h1>I build systems that turn everyday apps into automated AI workflows.</h1>
+    <p class="lede">I connect tools people already use — Telegram, Gmail, Google Sheets — with AI models and automation platforms, so tasks that used to take time now just happen.</p>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="section-title">About</h2>
+    <p>I'm an AI and automation engineer focused on building practical, working systems that solve real, everyday problems using AI models and automation platforms.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">Three systems I've designed and built end to end.</p>
+
+    <div class="project">
+      <h3>1. AI Chat Assistant for Telegram</h3>
+      <p class="project-summary">A ChatGPT-style AI assistant built directly into Telegram, so people can chat with an AI without leaving the app they already use daily.</p>
+      <div class="flow">Telegram Bot → Make.com → Google Gemini AI → Reply sent back to Telegram</div>
+      <h4>Problem</h4>
+      <p>Most AI chat tools live in their own separate app, forcing people to switch away from where their conversations already happen.</p>
+      <h4>How it works</h4>
+      <ul>
+        <li>Telegram Bot API handles the user-facing chat interface</li>
+        <li>Make.com manages incoming messages and the response flow</li>
+        <li>Google Gemini AI generates each reply in real time</li>
+      </ul>
+      <h4>Result</h4>
+      <p>A fully working AI chatbot inside Telegram — no separate app, no extra login. Responses come back instantly, with no lag compared to switching to a separate AI app.</p>
+      <div class="tags">
+        <span class="tag">Telegram Bot API</span>
+        <span class="tag">Make.com</span>
+        <span class="tag">Google Gemini AI</span>
+      </div>
+      <p class="demo-line">See it in action: <a href="#">add your link here</a></p>
+    </div>
+
+    <div class="project">
+      <h3>2. Automated Email Triage &amp; Summarization System</h3>
+      <p class="project-summary">Monitors an inbox, filters for what actually matters, summarizes it with AI, and archives only the important emails — automatically.</p>
+      <div class="flow">Gmail → Make.com → Google Gemini AI (summarize) → Importance filter → Google Docs</div>
+      <h4>Problem</h4>
+      <p>Important emails get buried in inbox noise, and reading everything in full doesn't scale.</p>
+      <h4>How it works</h4>
+      <ul>
+        <li>Make.com watches Gmail for new incoming messages</li>
+        <li>Each email is summarized by Google Gemini AI</li>
+        <li>A filter decides whether the email is actually important</li>
+        <li>Only qualifying summaries get logged to Google Docs</li>
+      </ul>
+      <h4>Result</h4>
+      <p>A running, organized log of only what matters — cutting inbox reading time down to a quick scan, an estimated 70–80% reduction versus reading every email in full.</p>
+      <div class="tags">
+        <span class="tag">Gmail</span>
+        <span class="tag">Make.com</span>
+        <span class="tag">Google Gemini AI</span>
+        <span class="tag">Google Docs</span>
+      </div>
+      <p class="demo-line">See it in action: <a href="#">add your link here</a></p>
+    </div>
+
+    <div class="project">
+      <h3>3. Automated Sales &amp; Expense Logging Bot</h3>
+      <p class="project-summary">Lets a salesperson log expenses and sales as a casual chat message — AI turns that free text into clean spreadsheet rows.</p>
+      <div class="flow">Telegram Bot → Make.com → Google Gemini AI (extract) → JSON Parse → Google Sheets → Confirmation back to Telegram</div>
+      <h4>Problem</h4>
+      <p>Manual, end-of-day spreadsheet entry is slow, easy to skip, and error-prone for a salesperson on the move.</p>
+      <h4>How it works</h4>
+      <ul>
+        <li>Telegram bot accepts free-text entries, no fixed format required</li>
+        <li>Google Gemini AI extracts structured data (item, amount, category)</li>
+        <li>JSON Parse breaks that output into fields Make.com can map</li>
+        <li>Parsed fields are written straight into Google Sheets</li>
+        <li>A confirmation message is sent back to the user in Telegram</li>
+      </ul>
+      <h4>Result</h4>
+      <p>A casual chat message becomes a clean spreadsheet row instantly — turning what used to be 5–10 minutes of manual entry into a single message, with zero manual formatting.</p>
+      <div class="tags">
+        <span class="tag">Telegram Bot API</span>
+        <span class="tag">Make.com</span>
+        <span class="tag">Google Gemini AI</span>
+        <span class="tag">JSON Parse</span>
+        <span class="tag">Google Sheets</span>
+      </div>
+      <p class="demo-line">See it in action: <a href="#">add your link here</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 class="section-title">Skills &amp; Tools</h2>
+    <p class="section-sub">What I actually work with, day to day.</p>
+
+    <div class="skills-group">
+      <h4>AI &amp; Automation Platforms</h4>
+      <div class="tags">
+        <span class="tag">Google Gemini AI</span>
+        <span class="tag">Make.com</span>
+        <span class="tag">Prompt Engineering</span>
+        <span class="tag">AI Agents</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h4>Integrations &amp; Data</h4>
+      <div class="tags">
+        <span class="tag">Telegram Bot API</span>
+        <span class="tag">Gmail</span>
+        <span class="tag">Google Sheets</span>
+        <span class="tag">Google Docs</span>
+        <span class="tag">JSON Parse</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h4>Core Competencies</h4>
+      <div class="tags">
+        <span class="tag">Workflow Automation Design</span>
+        <span class="tag">API Integration</span>
+        <span class="tag">Conditional Logic / Filtering</span>
+        <span class="tag">LLM-Based Data Extraction</span>
+        <span class="tag">Conversational UX Design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="future">
+  <div class="wrap">
+    <h2 class="section-title">What's next</h2>
+    <p class="section-sub">Projects and skills currently in progress.</p>
+    <div class="future-box">
+      <h3>Always learning, always building</h3>
+      <p>I'm continuously expanding into every part of the AI and automation space — prompt engineering, AI agents, new automation platforms, and the broader tools of the field. More projects are already in progress and will be added here as they're completed — this space grows along with my work.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-sub">Open to AI &amp; automation engineering roles and freelance builds.</p>
+    <div class="contact-grid">
+      <div class="contact-card"><span>Email</span>your-email@example.com</div>
+      <div class="contact-card"><span>LinkedIn</span>linkedin.com/in/your-profile</div>
+      <div class="contact-card"><span>GitHub</span>github.com/your-username</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Mary Odunayo Ajayi — AI &amp; Automation Engineer
+  </div>
+</footer>
+
+</body>
+</html>
